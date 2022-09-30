@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Sengsith/react-signup-component)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://steady-capybara-e868e7.netlify.app/)
 
 ## My process
 
@@ -56,15 +56,15 @@ One thing I was able to practice with this project was creating inputs for a for
 An example of what it would look like: 
 
 ```js
-  const INPUTS = [{
-    id: 1,
-    name: "firstName",
-    type: "text",
-    placeholder: "First Name",
-    errormessage: "First Name cannot be empty",
-    required: true,
-    // refer: userRef
-  },...];
+const INPUTS = [{
+  id: 1,
+  name: "firstName",
+  type: "text",
+  placeholder: "First Name",
+  errormessage: "First Name cannot be empty",
+  required: true,
+  // refer: userRef
+},...];
 ```
 
 Afterwards, we pass the INPUTS into react components
@@ -76,13 +76,13 @@ Afterwards, we pass the INPUTS into react components
 Inside the container where we will have our dynamic input tags, we want to map out each one. The various properties of INPUTS can be passed by desstructuring each object as long as each name is the same:
 
 ```js
-      {INPUTS.map(input => (
-        <CardInput
-        key={input.id}
-        id={input.id}
-        errormessage={input.errormessage}
-        {...input} />
-      ))}
+{INPUTS.map(input => (
+  <CardInput
+  key={input.id}
+  id={input.id}
+  errormessage={input.errormessage}
+  {...input} />
+))}
 ```
 
 ### Continued development
