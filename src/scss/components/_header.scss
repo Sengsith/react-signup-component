@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+.Header {
+  margin-bottom: 2rem;
+  
+  h1 {
+    font-weight: $fw-bold;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-weight: $fw-medium;
+  }
+}
+
+@media (min-width: 800px) {
+  .Header {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}

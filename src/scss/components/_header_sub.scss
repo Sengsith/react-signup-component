@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+.HeaderSub {
+  background-color: $clr-accent-blue;
+  border-radius: 1rem;
+  padding: 1rem 3rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 12px 5px -5px hsla(249, 10%, 26%, 50%);
+
+  h1 {
+    font-size: $fs-body;
+  }
+
+  span {
+    font-weight: $fw-regular;
+  }
+}

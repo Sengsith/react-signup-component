@@ -1,0 +1,54 @@
+@use '../abstracts' as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // outline: 1px solid limegreen !important;
+}
+
+body {
+  text-align: center;
+  color: white;
+  background: url("../../images/bg-intro-mobile.png") center center no-repeat;
+  background-color: $clr-primary-red;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $ff-body;
+  font-size: $fs-body;
+  font-weight: $fw-regular;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 1.5rem;
+}
+
+input::placeholder {
+  font-weight: $fw-bold;
+  font-family: $ff-body;
+}
+
+.GridCol {
+  max-width: 35rem;
+}
+
+@media (min-width: 800px) {
+  body {
+    background: url("../../images/bg-intro-desktop.png");
+    background-color: $clr-primary-red;
+    display: default;
+  }
+
+  main {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
